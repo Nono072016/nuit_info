@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html>
+	
+	<head>
+		<!-- all characteres -->
+		<meta charset="UTF-8"/>
+
+		<!-- recursive -->
+		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="height=device-height" />
+
+		<!-- files links -->
+		<link rel="stylesheet" media="screen" type="txt/css" href="css/tsunami-css.css"/>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+	</head>
+		
+	<body>
+
+		<div class="boxed" >
+			<h1 class="titre"> TSUNAMI </h1>
+			
+			<div class="ligne">
+				<p class="center">Indice</p>
+				
+				<div class="bordure" id="indice">
+					<img class="deux" src="image/indice.png" alt="Page">
+				</div>
+				
+				<div class="bordure" id="indice2">
+					<img class="deux" src="image/eponge.png" alt="Page">
+				</div>
+				
+				<div>
+					<img src="image/number1.png" alt="Page">
+				</div>
+			</div>
+			
+			<div id="situ">
+				<p class="center">Je suis près de la mer</p>
+				<img src="image/images.jpg" alt="Question" id="trois">
+			</div>
+			
+			<div class="row main_img">
+				<div class="main_img2 col-md-3 col-sm-6 col-xs-12 img center" style="width:335px;height:270px;">
+					<p class="center">Je saute dans la vague ?</p>
+					<img src="image/vague.gif" alt="Reponse1" onclick="faux()" class="taille2">
+				</div>
+				
+				<div class="main_img2 col-md-3 col-sm-6 col-xs-12  img center" style="width:335px;height:270px;">
+					<p class="center">Je quitte la plage ?</p>
+					<img src="image/rentre.jpeg" alt="Reponse2"  onclick="indice()" class="taille2">
+				</div>
+			
+				<div class="main_img2 col-md-3 col-sm-6 col-xs-12  img center" style="width:335px;height:270px;">
+					<p class="center">Je reste sur la plage ?</p>
+					<img src="image/reste.jpg" alt="Reponse3" onclick="faux()" class="taille2">
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">
+			function indice() 
+			{
+	 			document.getElementById("indice").style.display="none";
+				document.getElementById("indice2").style.display="block";
+				setTimeout(function () {
+									window.location.href= './tsunami_g2.html';
+									}, 2000);
+			}
+
+			function faux() 
+			{
+	 			alert("Zut ! Tu n'as pas trouvé la bonne réponse ... Réessaye ?! :)");
+			}
+		</script>
+	</body>
+</html>
+
